@@ -107,14 +107,12 @@
         }
 
         .contacts {
-            display: flex;
-            flex-direction: column;
             font-size: 13px;
             color: #666;
             border-radius: 15px;
             border: 1px solid #ccc;
             padding: var(--gap3);
-            gap: var(--gap5);
+            margin-top: var(--gap3);
         }
 
         .contacts a {
@@ -126,39 +124,34 @@
             color: #333;
         }
 
-        .contactUp {
-            display: flex;
-            flex-direction: column;
-            width: 100%;
-        }
-
         .contactUp div {
             margin-bottom: var(--gapHalf);
         }
 
         .contactDown {
-            display: flex;
-            flex-direction: row;
+            display: table;
             width: 100%;
-            gap: var(--gap2);
-            align-items: flex-end;
+            margin-top: var(--gap3);
         }
 
-        .arrow {
-            height: 30px;
-            width: fit-content;
-            overflow: hidden;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+        .contactDown .contactUp {
+            display: table-cell;
+            vertical-align: bottom;
+        }
+
+        .contactDown .arrow {
+            display: table-cell;
+            vertical-align: bottom;
+            text-align: right;
+            padding-left: var(--gap2);
         }
 
         .arrow img {
-            max-height: 100%;
-            width: auto;
-            height: auto;
-            display: block;
+            height: 30px;
+            display: inline-block;
+            vertical-align: bottom;
         }
+
     </style>
 </head>
 <body>
@@ -218,13 +211,13 @@
                 Санкт-Петербург, 190035
             </div>
             <div class="arrow">
-                <img src="https://anyforms.ru/images/link.svg" alt="arrow">
+                <img src="https://anyforms.ru/images/email/arrow.png" alt="link">
             </div>
         </div>
     </div>
 
     <div class="logo">
-        <img src="https://anyforms.ru/images/logo_one_line.svg" alt="Any Forms">
+        <img src="https://anyforms.ru/images/logo_one_line.png" alt="Any Forms">
     </div>
 </div>
 </body>
