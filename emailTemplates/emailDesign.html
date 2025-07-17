@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+        :root {
+            --gap: 7px;
+            --gap2: 14px;
+            --gap3: 21px;
+            --gap4: 28px;
+            --gap5: 35px;
+            --gapHalf: 3.5px;
+        }
+
+        body {
+            margin: var(--gap);
+            font-family: sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: var(--gap4);
+            background-color: #f9f9f9;
+        }
+
+        .logo {
+            height: 50px;
+            width: 100%;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: var(--gap3);
+            padding-top: var(--gap2);
+        }
+
+        .logo img {
+            max-height: 100%;
+            width: auto;
+            height: auto;
+            display: block;
+        }
+
+        .title {
+            font-size: 32px;
+            font-weight: bold;
+            line-height: 1.2;
+            margin-bottom: var(--gap3);
+        }
+
+        .subtitle {
+            font-size: 24px;
+            margin-bottom: var(--gap3);
+        }
+
+        .text {
+            font-size: 16px;
+            margin-bottom: var(--gap3);
+            line-height: 1.4;
+        }
+
+        .bullet {
+            font-size: 16px;
+            margin-bottom: var(--gap2);
+        }
+
+        .images {
+            display: flex;
+            flex-wrap: wrap;
+            gap: var(--gap);
+            margin-bottom: var(--gap3);
+        }
+
+        .images img {
+            width: calc(33.33% - 5px);
+            height: auto;
+            object-fit: cover;
+            border-radius: 4px;
+        }
+
+        .blue-bar {
+            background-color: #a0b8e0;
+            color: white;
+            padding: var(--gap2);
+            text-align: center;
+            font-size: 14px;
+            border-radius: 5px;
+            margin-bottom: var(--gap3);
+        }
+
+        .blue-bar a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .bottom-title {
+            font-size: 28px;
+            font-weight: bold;
+            line-height: 1.2;
+            margin-bottom: var(--gap3);
+        }
+
+        .gray-text {
+            color: #ABABAB;
+        }
+
+        .contacts {
+            display: flex;
+            flex-direction: column;
+            font-size: 13px;
+            color: #666;
+            border-radius: 15px;
+            border: 1px solid #ccc;
+            padding: var(--gap3);
+            gap: var(--gap5);
+        }
+
+        .contacts a {
+            color: inherit;
+            text-decoration: underline;
+        }
+
+        .contacts a:hover {
+            color: #333;
+        }
+
+        .contactUp {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+
+        .contactUp div {
+            margin-bottom: var(--gapHalf);
+        }
+
+        .contactDown {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            gap: var(--gap2);
+            align-items: flex-end;
+        }
+
+        .arrow {
+            height: 30px;
+            width: fit-content;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .arrow img {
+            max-height: 100%;
+            width: auto;
+            height: auto;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+
+    <h1 class="title">
+        СИЛИКОНОВЫЕ ФОРМЫ<br>
+        ДЛЯ ВАШЕГО БИЗНЕСА<br>
+        <span class="gray-text">С НУЛЯ ПОД КЛЮЧ </span>
+    </h1>
+
+    <p class="text">
+        Здравствуйте!<br>
+        Я Юрий, CEO Any Forms. Мы создаём силиконовые формы под ваши идеи – для выпечки,
+        десертов, масла, заморозки и других задач.<br>
+        От идеи до готовой формы – быстро и качественно.
+    </p>
+
+    <p class="text">
+        Наш прайс-лист содержит более 50 брендов, включая Birch, Rene, Selfie, Lotte, Jisco и другие.
+    </p>
+
+    <p class="text">Что предлагаем:</p>
+    <ul>
+        <li class="bullet">Формы любой сложности и размера – нужно только описание задачи</li>
+        <li class="bullet">Скорость и качество исполнения, в том числе и на крупные заказы</li>
+    </ul>
+
+    <div class="images">
+        <img src="https://anyforms.ru/images/email/1.png" alt="">
+        <img src="https://anyforms.ru/images/email/2.png" alt="">
+        <img src="https://anyforms.ru/images/email/3.png" alt="">
+    </div>
+
+    <h2 class="bottom-title">
+        <span class="gray-text">ЕСТЬ ЗАДАЧА?</span><br>
+        ПРОСТО НАПИШИТЕ –<br>
+        ПРЕДЛОЖИМ РЕШЕНИЕ<br>
+        УЖЕ СЕГОДНЯ.
+    </h2>
+
+    <div class="blue-bar">
+        <a href="https://anyforms.ru/anyforms.pdf?utm_compain=email&ut">Посмотреть презентацию</a>
+    </div>
+
+    <div class="contacts">
+        <div class="contactUp">
+            <div>WhatsApp: <a href="https://wa.me/79818035395">+7 (981) 803 53 95</a></div>
+            <div>Telegram: <a href="https://t.me/AnyFormsBot">@AnyFormsBot</a></div>
+            <div>Почта: <a href="mailto:suvorov@anyforms.ru">suvorov@anyforms.ru</a></div>
+            <div>Telegram Канал: <a href="https://t.me/anyforms">@anyforms</a></div>
+        </div>
+        <div class="contactDown">
+            <div class="contactUp">
+                Адрес: ул. Яблоневая, 23<br>
+                Санкт-Петербург, 190035
+            </div>
+            <div class="arrow">
+                <img src="https://anyforms.ru/images/link.svg" alt="arrow">
+            </div>
+        </div>
+    </div>
+
+    <div class="logo">
+        <img src="https://anyforms.ru/images/logo_one_line.svg" alt="Any Forms">
+    </div>
+</div>
+</body>
+</html>
